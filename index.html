@@ -107,9 +107,9 @@
       );
     }
     .hero-inner {
-      max-width: 1140px; margin: 0 auto; width: 100%;
+      max-width: 720px; margin: 0 auto; width: 100%;
       position: relative; z-index: 1;
-      display: grid; grid-template-columns: 1fr 380px; gap: 64px; align-items: center;
+      display: flex; flex-direction: column; align-items: center; text-align: center;
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
@@ -133,9 +133,9 @@
     }
     .hero-sub {
       font-size: 15px; color: rgba(255,255,255,0.65);
-      line-height: 1.9; margin-bottom: 40px; max-width: 460px;
+      line-height: 1.9; margin-bottom: 40px; max-width: 560px; text-align: center;
     }
-    .hero-cta-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-cta-group { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
     .btn-primary {
       background: var(--orange); color: #fff;
       border-radius: 7px; padding: 15px 32px;
@@ -505,7 +505,6 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; }
-      .hero-stats { display: none; }
       .what-grid { grid-template-columns: 1fr; gap: 40px; }
       .fw-grid, .features-grid, .pain-grid { grid-template-columns: 1fr 1fr; }
       .scope-grid { grid-template-columns: 1fr 1fr; }
@@ -552,107 +551,6 @@
       <div class="hero-cta-group">
         <a href="https://app.spirinc.com/t/H_vQ01vClf0LmLgUwmVWY/as/XMn5n8Z_s_rK6GUlabUGi/confirm" target="_blank" rel="noopener" class="btn-primary">無料相談を予約する</a>
         <a href="#features" class="btn-ghost">サービス詳細を見る</a>
-      </div>
-    </div>
-    <div class="hero-stats reveal reveal-delay-2">
-      <div class="stat-card accent">
-        <div class="stat-label-sm">支援企業 継続率</div>
-        <div class="stat-num en">85.7<span class="stat-num-unit">%</span></div>
-        <div class="stat-note">創業1年5ヶ月時点</div>
-      </div>
-      <div class="stat-grid">
-        <div class="stat-card">
-          <div class="stat-label-sm">新卒採用支援実績</div>
-          <div class="stat-num-sm en">15<span class="stat-num-sm-unit">名</span></div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label-sm">中途支援実績</div>
-          <div class="stat-num-sm en">14<span class="stat-num-sm-unit">名</span></div>
-        </div>
-      </div>
-    </div>  </div>
-</section>
-
-<!-- RPO DATA SECTION -->
-<section class="rpo-data">
-  <div class="inner">
-    <p class="s-label">DATA</p>
-    <h2 class="s-title reveal">RPOサービス支援実績</h2>
-    <p class="s-desc reveal">創業1年5ヶ月で積み上げた、業種・職種別の支援データです。</p>
-    <div class="rpo-charts-grid reveal">
-      <div class="rpo-chart-card">
-        <svg width="360" height="360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
-<text x="180" y="22" text-anchor="middle" fill="#1A3050" font-size="15" font-weight="700" font-family="sans-serif">業種別</text>
-<path d="M184.1 64.1 A130 130 0 0 1 259.7 296.7 L230.3 258.8 A82 82 0 0 0 182.6 112.0 Z" fill="#29ABE2"/>
-<path d="M253.1 301.5 A130 130 0 0 1 50.1 198.1 L98.0 196.6 A82 82 0 0 0 226.1 261.8 Z" fill="#1A7FB5"/>
-<path d="M50.1 189.9 A130 130 0 0 1 72.5 120.9 L112.2 147.9 A82 82 0 0 0 98.0 191.4 Z" fill="#F7941D"/>
-<path d="M77.3 114.3 A130 130 0 0 1 136.0 71.7 L152.2 116.8 A82 82 0 0 0 115.2 143.7 Z" fill="#89C4E1"/>
-<path d="M143.7 69.2 A130 130 0 0 1 175.9 64.1 L177.4 112.0 A82 82 0 0 0 157.1 115.3 Z" fill="#AAAAAA"/>
-<text x="180" y="186" text-anchor="middle" fill="#AAAAAA" font-size="10" font-family="Inter,sans-serif" letter-spacing="2">RPO</text>
-<text x="180" y="208" text-anchor="middle" fill="#1A3050" font-size="18" font-weight="900" font-family="sans-serif">実績</text>
-<circle cx="306.5" cy="152.9" r="3" fill="#29ABE2"/>
-<line x1="306.5" y1="152.9" x2="339.8" y2="142.1" stroke="#29ABE2" stroke-width="1" opacity="0.45"/>
-<circle cx="339.8" cy="142.1" r="3" fill="#29ABE2"/>
-<text x="349.8" y="137.1" text-anchor="start" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">物流</text>
-<text x="349.8" y="152.1" text-anchor="start" fill="#29ABE2" font-size="11" font-weight="700" font-family="Inter,sans-serif">(40%)</text>
-<circle cx="119.6" cy="312.5" r="3" fill="#1A7FB5"/>
-<line x1="119.6" y1="312.5" x2="103.7" y2="343.7" stroke="#1A7FB5" stroke-width="1" opacity="0.45"/>
-<circle cx="103.7" cy="343.7" r="3" fill="#1A7FB5"/>
-<text x="93.7" y="338.7" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">メーカー</text>
-<text x="93.7" y="353.7" text-anchor="end" fill="#1A7FB5" font-size="11" font-weight="700" font-family="Inter,sans-serif">(35%)</text>
-<circle cx="53.5" cy="152.9" r="3" fill="#F7941D"/>
-<line x1="53.5" y1="152.9" x2="20.2" y2="142.1" stroke="#F7941D" stroke-width="1" opacity="0.45"/>
-<circle cx="20.2" cy="142.1" r="3" fill="#F7941D"/>
-<text x="10.2" y="137.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">IT・WEB</text>
-<text x="10.2" y="152.1" text-anchor="end" fill="#F7941D" font-size="11" font-weight="700" font-family="Inter,sans-serif">(10%)</text>
-<circle cx="101.8" cy="86.4" r="3" fill="#89C4E1"/>
-<line x1="101.8" y1="86.4" x2="81.3" y2="58.1" stroke="#89C4E1" stroke-width="1" opacity="0.45"/>
-<circle cx="81.3" cy="58.1" r="3" fill="#89C4E1"/>
-<text x="71.3" y="53.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">商社</text>
-<text x="71.3" y="68.1" text-anchor="end" fill="#89C4E1" font-size="11" font-weight="700" font-family="Inter,sans-serif">(10%)</text>
-<circle cx="159.2" cy="62.6" r="3" fill="#AAAAAA"/>
-<line x1="159.2" y1="62.6" x2="153.7" y2="28.1" stroke="#AAAAAA" stroke-width="1" opacity="0.45"/>
-<circle cx="153.7" cy="28.1" r="3" fill="#AAAAAA"/>
-<text x="143.7" y="23.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">その他</text>
-<text x="143.7" y="38.1" text-anchor="end" fill="#AAAAAA" font-size="11" font-weight="700" font-family="Inter,sans-serif">(5%)</text>
-</svg>
-      </div>
-      <div class="rpo-chart-card">
-        <svg width="360" height="360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
-<text x="180" y="22" text-anchor="middle" fill="#1A3050" font-size="15" font-weight="700" font-family="sans-serif">職種別</text>
-<path d="M184.1 64.1 A130 130 0 0 1 259.7 296.7 L230.3 258.8 A82 82 0 0 0 182.6 112.0 Z" fill="#29ABE2"/>
-<path d="M253.1 301.5 A130 130 0 0 1 57.7 238.0 L102.8 221.8 A82 82 0 0 0 226.1 261.8 Z" fill="#1A7FB5"/>
-<path d="M55.2 230.3 A130 130 0 0 1 72.5 120.9 L112.2 147.9 A82 82 0 0 0 101.3 216.9 Z" fill="#F7941D"/>
-<path d="M77.3 114.3 A130 130 0 0 1 136.0 71.7 L152.2 116.8 A82 82 0 0 0 115.2 143.7 Z" fill="#89C4E1"/>
-<path d="M143.7 69.2 A130 130 0 0 1 175.9 64.1 L177.4 112.0 A82 82 0 0 0 157.1 115.3 Z" fill="#AAAAAA"/>
-<text x="180" y="186" text-anchor="middle" fill="#AAAAAA" font-size="10" font-family="Inter,sans-serif" letter-spacing="2">RPO</text>
-<text x="180" y="208" text-anchor="middle" fill="#1A3050" font-size="18" font-weight="900" font-family="sans-serif">実績</text>
-<circle cx="306.5" cy="152.9" r="3" fill="#29ABE2"/>
-<line x1="306.5" y1="152.9" x2="339.8" y2="142.1" stroke="#29ABE2" stroke-width="1" opacity="0.45"/>
-<circle cx="339.8" cy="142.1" r="3" fill="#29ABE2"/>
-<text x="349.8" y="137.1" text-anchor="start" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">営業</text>
-<text x="349.8" y="152.1" text-anchor="start" fill="#29ABE2" font-size="11" font-weight="700" font-family="Inter,sans-serif">(40%)</text>
-<circle cx="138.9" cy="320.5" r="3" fill="#1A7FB5"/>
-<line x1="138.9" y1="320.5" x2="128.1" y2="353.8" stroke="#1A7FB5" stroke-width="1" opacity="0.45"/>
-<circle cx="128.1" cy="353.8" r="3" fill="#1A7FB5"/>
-<text x="118.1" y="348.8" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">ドライバー</text>
-<text x="118.1" y="363.8" text-anchor="end" fill="#1A7FB5" font-size="11" font-weight="700" font-family="Inter,sans-serif">(30%)</text>
-<circle cx="48.6" cy="173.2" r="3" fill="#F7941D"/>
-<line x1="48.6" y1="173.2" x2="14.1" y2="167.7" stroke="#F7941D" stroke-width="1" opacity="0.45"/>
-<circle cx="14.1" cy="167.7" r="3" fill="#F7941D"/>
-<text x="4.1" y="162.7" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">コーポレート</text>
-<text x="4.1" y="177.7" text-anchor="end" fill="#F7941D" font-size="11" font-weight="700" font-family="Inter,sans-serif">(15%)</text>
-<circle cx="101.8" cy="86.4" r="3" fill="#89C4E1"/>
-<line x1="101.8" y1="86.4" x2="81.3" y2="58.1" stroke="#89C4E1" stroke-width="1" opacity="0.45"/>
-<circle cx="81.3" cy="58.1" r="3" fill="#89C4E1"/>
-<text x="71.3" y="53.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">エンジニア</text>
-<text x="71.3" y="68.1" text-anchor="end" fill="#89C4E1" font-size="11" font-weight="700" font-family="Inter,sans-serif">(10%)</text>
-<circle cx="159.2" cy="62.6" r="3" fill="#AAAAAA"/>
-<line x1="159.2" y1="62.6" x2="153.7" y2="28.1" stroke="#AAAAAA" stroke-width="1" opacity="0.45"/>
-<circle cx="153.7" cy="28.1" r="3" fill="#AAAAAA"/>
-<text x="143.7" y="23.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">その他</text>
-<text x="143.7" y="38.1" text-anchor="end" fill="#AAAAAA" font-size="11" font-weight="700" font-family="Inter,sans-serif">(5%)</text>
-</svg>
       </div>
     </div>
   </div>
@@ -938,6 +836,91 @@
         <div class="result-label">中途支援</div>
         <div class="result-num en">14<span class="result-unit">名</span></div>
         <div class="result-sub">中途9名＋インターン5名<br>多様な採用形態に対応</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RPO DATA SECTION -->
+<section class="rpo-data">
+  <div class="inner">
+    <p class="s-label">DATA</p>
+    <h2 class="s-title reveal">RPOサービス支援実績</h2>
+    <p class="s-desc reveal">創業1年5ヶ月で積み上げた、業種・職種別の支援データです。</p>
+    <div class="rpo-charts-grid reveal">
+      <div class="rpo-chart-card">
+        <svg width="360" height="360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+<text x="180" y="22" text-anchor="middle" fill="#1A3050" font-size="15" font-weight="700" font-family="sans-serif">業種別</text>
+<path d="M184.1 64.1 A130 130 0 0 1 259.7 296.7 L230.3 258.8 A82 82 0 0 0 182.6 112.0 Z" fill="#29ABE2"/>
+<path d="M253.1 301.5 A130 130 0 0 1 50.1 198.1 L98.0 196.6 A82 82 0 0 0 226.1 261.8 Z" fill="#1A7FB5"/>
+<path d="M50.1 189.9 A130 130 0 0 1 72.5 120.9 L112.2 147.9 A82 82 0 0 0 98.0 191.4 Z" fill="#F7941D"/>
+<path d="M77.3 114.3 A130 130 0 0 1 136.0 71.7 L152.2 116.8 A82 82 0 0 0 115.2 143.7 Z" fill="#89C4E1"/>
+<path d="M143.7 69.2 A130 130 0 0 1 175.9 64.1 L177.4 112.0 A82 82 0 0 0 157.1 115.3 Z" fill="#AAAAAA"/>
+<text x="180" y="186" text-anchor="middle" fill="#AAAAAA" font-size="10" font-family="Inter,sans-serif" letter-spacing="2">RPO</text>
+<text x="180" y="208" text-anchor="middle" fill="#1A3050" font-size="18" font-weight="900" font-family="sans-serif">実績</text>
+<circle cx="306.5" cy="152.9" r="3" fill="#29ABE2"/>
+<line x1="306.5" y1="152.9" x2="339.8" y2="142.1" stroke="#29ABE2" stroke-width="1" opacity="0.45"/>
+<circle cx="339.8" cy="142.1" r="3" fill="#29ABE2"/>
+<text x="349.8" y="137.1" text-anchor="start" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">物流</text>
+<text x="349.8" y="152.1" text-anchor="start" fill="#29ABE2" font-size="11" font-weight="700" font-family="Inter,sans-serif">(40%)</text>
+<circle cx="119.6" cy="312.5" r="3" fill="#1A7FB5"/>
+<line x1="119.6" y1="312.5" x2="103.7" y2="343.7" stroke="#1A7FB5" stroke-width="1" opacity="0.45"/>
+<circle cx="103.7" cy="343.7" r="3" fill="#1A7FB5"/>
+<text x="93.7" y="338.7" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">メーカー</text>
+<text x="93.7" y="353.7" text-anchor="end" fill="#1A7FB5" font-size="11" font-weight="700" font-family="Inter,sans-serif">(35%)</text>
+<circle cx="53.5" cy="152.9" r="3" fill="#F7941D"/>
+<line x1="53.5" y1="152.9" x2="20.2" y2="142.1" stroke="#F7941D" stroke-width="1" opacity="0.45"/>
+<circle cx="20.2" cy="142.1" r="3" fill="#F7941D"/>
+<text x="10.2" y="137.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">IT・WEB</text>
+<text x="10.2" y="152.1" text-anchor="end" fill="#F7941D" font-size="11" font-weight="700" font-family="Inter,sans-serif">(10%)</text>
+<circle cx="101.8" cy="86.4" r="3" fill="#89C4E1"/>
+<line x1="101.8" y1="86.4" x2="81.3" y2="58.1" stroke="#89C4E1" stroke-width="1" opacity="0.45"/>
+<circle cx="81.3" cy="58.1" r="3" fill="#89C4E1"/>
+<text x="71.3" y="53.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">商社</text>
+<text x="71.3" y="68.1" text-anchor="end" fill="#89C4E1" font-size="11" font-weight="700" font-family="Inter,sans-serif">(10%)</text>
+<circle cx="159.2" cy="62.6" r="3" fill="#AAAAAA"/>
+<line x1="159.2" y1="62.6" x2="153.7" y2="28.1" stroke="#AAAAAA" stroke-width="1" opacity="0.45"/>
+<circle cx="153.7" cy="28.1" r="3" fill="#AAAAAA"/>
+<text x="143.7" y="23.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">その他</text>
+<text x="143.7" y="38.1" text-anchor="end" fill="#AAAAAA" font-size="11" font-weight="700" font-family="Inter,sans-serif">(5%)</text>
+</svg>
+      </div>
+      <div class="rpo-chart-card">
+        <svg width="360" height="360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+<text x="180" y="22" text-anchor="middle" fill="#1A3050" font-size="15" font-weight="700" font-family="sans-serif">職種別</text>
+<path d="M184.1 64.1 A130 130 0 0 1 259.7 296.7 L230.3 258.8 A82 82 0 0 0 182.6 112.0 Z" fill="#29ABE2"/>
+<path d="M253.1 301.5 A130 130 0 0 1 57.7 238.0 L102.8 221.8 A82 82 0 0 0 226.1 261.8 Z" fill="#1A7FB5"/>
+<path d="M55.2 230.3 A130 130 0 0 1 72.5 120.9 L112.2 147.9 A82 82 0 0 0 101.3 216.9 Z" fill="#F7941D"/>
+<path d="M77.3 114.3 A130 130 0 0 1 136.0 71.7 L152.2 116.8 A82 82 0 0 0 115.2 143.7 Z" fill="#89C4E1"/>
+<path d="M143.7 69.2 A130 130 0 0 1 175.9 64.1 L177.4 112.0 A82 82 0 0 0 157.1 115.3 Z" fill="#AAAAAA"/>
+<text x="180" y="186" text-anchor="middle" fill="#AAAAAA" font-size="10" font-family="Inter,sans-serif" letter-spacing="2">RPO</text>
+<text x="180" y="208" text-anchor="middle" fill="#1A3050" font-size="18" font-weight="900" font-family="sans-serif">実績</text>
+<circle cx="306.5" cy="152.9" r="3" fill="#29ABE2"/>
+<line x1="306.5" y1="152.9" x2="339.8" y2="142.1" stroke="#29ABE2" stroke-width="1" opacity="0.45"/>
+<circle cx="339.8" cy="142.1" r="3" fill="#29ABE2"/>
+<text x="349.8" y="137.1" text-anchor="start" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">営業</text>
+<text x="349.8" y="152.1" text-anchor="start" fill="#29ABE2" font-size="11" font-weight="700" font-family="Inter,sans-serif">(40%)</text>
+<circle cx="138.9" cy="320.5" r="3" fill="#1A7FB5"/>
+<line x1="138.9" y1="320.5" x2="128.1" y2="353.8" stroke="#1A7FB5" stroke-width="1" opacity="0.45"/>
+<circle cx="128.1" cy="353.8" r="3" fill="#1A7FB5"/>
+<text x="118.1" y="348.8" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">ドライバー</text>
+<text x="118.1" y="363.8" text-anchor="end" fill="#1A7FB5" font-size="11" font-weight="700" font-family="Inter,sans-serif">(30%)</text>
+<circle cx="48.6" cy="173.2" r="3" fill="#F7941D"/>
+<line x1="48.6" y1="173.2" x2="14.1" y2="167.7" stroke="#F7941D" stroke-width="1" opacity="0.45"/>
+<circle cx="14.1" cy="167.7" r="3" fill="#F7941D"/>
+<text x="4.1" y="162.7" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">コーポレート</text>
+<text x="4.1" y="177.7" text-anchor="end" fill="#F7941D" font-size="11" font-weight="700" font-family="Inter,sans-serif">(15%)</text>
+<circle cx="101.8" cy="86.4" r="3" fill="#89C4E1"/>
+<line x1="101.8" y1="86.4" x2="81.3" y2="58.1" stroke="#89C4E1" stroke-width="1" opacity="0.45"/>
+<circle cx="81.3" cy="58.1" r="3" fill="#89C4E1"/>
+<text x="71.3" y="53.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">エンジニア</text>
+<text x="71.3" y="68.1" text-anchor="end" fill="#89C4E1" font-size="11" font-weight="700" font-family="Inter,sans-serif">(10%)</text>
+<circle cx="159.2" cy="62.6" r="3" fill="#AAAAAA"/>
+<line x1="159.2" y1="62.6" x2="153.7" y2="28.1" stroke="#AAAAAA" stroke-width="1" opacity="0.45"/>
+<circle cx="153.7" cy="28.1" r="3" fill="#AAAAAA"/>
+<text x="143.7" y="23.1" text-anchor="end" fill="#1A3050" font-size="12.5" font-weight="700" font-family="sans-serif">その他</text>
+<text x="143.7" y="38.1" text-anchor="end" fill="#AAAAAA" font-size="11" font-weight="700" font-family="Inter,sans-serif">(5%)</text>
+</svg>
       </div>
     </div>
   </div>
